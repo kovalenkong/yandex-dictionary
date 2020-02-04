@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-      name='yandex_dictionary_relative',
+      name='yandex_dictionary',
       version='0.1.4',
       description='API yandex-dictionary python',
       packages=['yandex_dictionary_relative'],
