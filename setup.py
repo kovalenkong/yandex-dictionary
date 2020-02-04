@@ -5,7 +5,7 @@ setup(
       version='0.1.4',
       license='MIT',
       description='API yandex-dictionary python',
-      packages=['yandex_dictionary_relative'],
+      packages=['yandex_dictionary'],
       author='Kovalenko Nikolay',
       author_email='kovalenko.n.r-g@yandex.ru',
       zip_safe=False,
