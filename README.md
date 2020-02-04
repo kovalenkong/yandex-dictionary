@@ -1,5 +1,5 @@
 # yandex-dictionary
-This library makes it easy to work with the [yandex-dictionary API](https://yandex.ru/dev/dictionary/).
+Python library to work with the [yandex-dictionary API](https://yandex.ru/dev/dictionary/).
 
 ## Installation
 
@@ -18,4 +18,4 @@ pip install yandex-dictionary
 >>> dct.lookup("house")
 {"text": "house", "is_found": True}
 ```
-Read more in documentation.
+Read more in docs/.
