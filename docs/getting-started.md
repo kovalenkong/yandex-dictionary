@@ -5,7 +5,7 @@ pip install yandex-dictionary
 ```
 ## Быстрый старт
 ```python
->>> from yandex_dictionary_relative import Dictionary
+>>> from yandex_dictionary import Dictionary
 ...
 >>> dct = Dictionary("API key", 'ru', 'en')
 >>> dct.lookup('программирование')
@@ -28,6 +28,11 @@ pip install yandex-dictionary
 - `from_lang`, `to_lang`: языковая пара;
 - `ui`: язык интерфейса частей речи;
 - `flags`: опции поиска (битовая маска флагов).
+> Возможные значения `flags`:
+> - *0x0001*: применить семейный фильтр;
+> - *0x0002*: отображать названия частей речи в краткой форме;
+> - *0x0004*: включать поиск по форме слова;
+> - *0x0008*: включать фильтр, требующий соответствия частей речи искомого слова и перевода
 
 
 Получить список доступных языковых пар:
@@ -35,7 +40,7 @@ pip install yandex-dictionary
 >>> dct.get_langs()
 ```
 
-### Класс `models.Dictionary`
+### Класс `models.TextDescription`
 Экземпляр класса создается при вызове `lookup()`.
 Доступные методы и атрибуты:
 - `json()`: искомый ответ API-запроса в формате json;
@@ -95,4 +100,3 @@ True
 >>> text.get_syn('text', 'pos')
 [{'text': 'building', 'pos': 'существительное'}, {'text': 'household', 'pos': 'существительное'}]
 ```
-
