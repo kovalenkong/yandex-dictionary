@@ -12,6 +12,8 @@ pip install yandex-dictionary
 {"text": "программирование", "is_found": True}
 ```
 
+> Примечание: библиотека работает только с json данными.
+
 ### Класс `Dictionary`
 Конструктор класса принимает обязательный параметр `api_key`, а также необязательные (можно указать отдельно при вызове `lookup()`):
 - `api_key`: API-ключ (обязательно), можно получить на [yandex](https://yandex.ru/dev/keys/get/?service=dict);
